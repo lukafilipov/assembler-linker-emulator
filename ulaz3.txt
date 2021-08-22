@@ -1,0 +1,16 @@
+.public a,b, _start
+.extern c,  d
+
+.data.prva
+
+a:.long 192
+
+.text.prva
+
+_start:sub r0, r0
+text_lokalna: add r0, 20
+
+int 0
+
+.end 
+

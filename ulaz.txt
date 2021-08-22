@@ -1,0 +1,45 @@
+.public a,c
+.extern b
+
+.text
+add r5, r7
+test r1, r3
+call d
+a:mov r15, r2
+d:.long 12345678
+.char 3, 6, 7
+in r10 r13
+.public d
+
+.text.prva
+int 0
+add r0, r1
+sub r5 , 15
+mul PC, 32
+div LR, 10
+cmp sp, pc
+
+and pc, r3
+str_test:test r4, 14
+
+ldr r4, r5, 5, 20
+call_test:str r6, 4, str_test
+
+call r14, 40
+call call_test
+
+int 3
+e:out r8, r9
+.char 15, 16
+mov PC, r10
+ldch_test:shr r4, r6, 5
+.long e
+ldcl r10, 13
+ldch r10, ldch_test 
+
+.data
+c:int 4
+.char 3, 6, 7
+ldch r11, 123
+
+.end

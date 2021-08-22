@@ -1,0 +1,16 @@
+#SymbolTable
+c              UND            0 g 0 0
+d              UND            0 g 1 0
+a              .data.prva     0 g 2 0
+.data.prva     .data.prva     0 l 3 4
+_start         .text.prva     0 g 4 0
+text_lokalna   .text.prva     4 l 5 0
+.text.prva     .text.prva     0 l 6 12
+
+#CodeSections
+.data.prva
+A0 00 00 00
+.text.prva
+00 00 00 F2 14 00 04 F1 
+00 00 00 F0
+

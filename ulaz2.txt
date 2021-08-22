@@ -1,0 +1,11 @@
+#SymbolTable
+b        UND       0 g 0 0 
+a        .text     12 g 1 0
+
+#RellocationTables
+68    A 8
+76    A 8
+
+.text.prva 
+AB CD 87 34
+
